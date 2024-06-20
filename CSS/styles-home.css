@@ -86,11 +86,6 @@ body {
     font-size: 2em;
 }
 
-h1, h2 {
-    margin: 0 0 20px 0;
-    font-weight: normal;
-}
-
 #descrizione {
     margin-top: 15px;
     background-color: transparent;
@@ -127,32 +122,6 @@ h1, h2 {
 
 #orari table {
     color: white;
-}
-
-
-form {
-    display: flex;
-   flex-direction: column;
-   gap: 5px;
-}
-
-.contattaci, .ricerca{
-    margin-top: 50px;
-}
-
-input, textarea {
-    padding: 10px;
-    font-size: 16px;
-    color: #000000;
-    border: 2px solid #07070d;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #9a9394;
-    color: rgb(0, 0, 0);
-    border: none;
-    cursor: pointer;
 }
 
 .footer {
