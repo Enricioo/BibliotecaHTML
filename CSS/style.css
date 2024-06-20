@@ -83,8 +83,13 @@ body {
     overflow: hidden;
 }
 
-h1 {
+.uscite {
     text-align: center;
+}
+
+h1, h2 {
+    margin: 0 0 20px 0;
+    font-weight: normal;
 }
 
 #descrizione {
@@ -111,6 +116,31 @@ h1 {
     border-left: 4px solid #dc3545;
 }
 
+form {
+    display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+
+.contattaci, .ricerca{
+    margin-top: 50px;
+}
+
+input, button, textarea {
+    padding: 10px;
+    font-size: 16px;
+    color: #000000;
+    border: 2px solid #07070d;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #9a9394;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
 .footer {
     background-color: #333;
     color: white;
@@ -119,4 +149,5 @@ h1 {
     width: 100%;
     bottom: 0;
 }
+
 
