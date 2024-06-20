@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../Immagini/sfondo.png);
+    background-size: cover;
+}
+
+#main-header {
+    color: black;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+/*.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}*/
+
+#accedi {
+    float: right;
+}
+
+.show {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    position: static;
+    background-color: transparent;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar > li,a {
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: rgb(83, 224, 255);
+}
+
+.genere-container {
+    display: flex;
+    justify-content: center;
+}
+
+.genere {
+    padding: 25px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.genere ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+#descrizione {
+    background-color: #e6f7ff;
+    padding: 1em;
+    border-left: 4px solid #0056b3;
+}
+
+#servizi {
+    background-color: #f0fff0;
+    padding: 10px;
+    border-left: 4px solid #28a745;
+}
+
+#orari {
+    background-color: #fffbea;
+    padding: 10px;
+    border-left: 4px solid #ffc107;
+}
+
+#contatti {
+    background-color: #ffebee;
+    padding: 10px;
+    border-left: 4px solid #dc3545;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    bottom: 0;
+}
+
