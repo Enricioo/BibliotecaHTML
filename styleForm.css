@@ -1,0 +1,145 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../Immagini/sfondo.png);
+    background-size: cover;
+}
+
+#main-header {
+    color: black;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    position: static;
+    background-color: transparent;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar > li,a {
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: rgb(83, 224, 255);
+}
+
+#accedi {
+    float: right;
+}
+
+.accedi-registrati {
+    text-align: center;
+}
+
+#qui { display: inline;
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+}
+.contattaci, .ricerca{
+    margin-top: 50px;
+}
+
+#mappa {
+    width: auto;
+    height: 500px;
+}
+
+input, button, textarea {
+    padding: 10px;
+    font-size: 16px;
+    color: #000000;
+    border: 2px solid #07070d;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #9a9394;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+
+#descrizione {
+    margin-top: 15px;
+    background-color: transparent;
+    padding: 40px;
+    border-left: 4px #0056b3;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#servizi {
+    background-color: lightblue;
+    padding: 40px;
+    border-left: 4px #28a745;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#servizi ul {
+    list-style: none;
+}
+
+#orari, #contatti {
+    padding: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 30%;
+    flex: 1;
+}
+
+#orari table {
+    display: flex;
+    justify-content: center;
+}
+
+#orari table {
+    color: white;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(0, 0, 43);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    bottom: 0;
+}
