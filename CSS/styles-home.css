@@ -41,6 +41,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     border: 2px solid;
+    padding: 25px;
+    font-size: 20px;
 }
 
 .navbar ul {
@@ -65,26 +67,23 @@ body {
     background-color: rgb(83, 224, 255);
 }
 
-.genere-container {
+.images {
     display: flex;
     justify-content: center;
 }
 
-.genere {
-    padding: 25px;
-    text-align: center;
-    background-color: transparent;
-}
-
-.genere ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.images img {
+    margin-right: 20px;
+    padding-left: 15px;
 }
 
 .uscite {
     text-align: center;
+    color: white;
+    padding: 40px;
+    position: relative;
+    background-color: rgb(61, 61, 61);
+    font-size: 2em;
 }
 
 h1, h2 {
@@ -93,28 +92,43 @@ h1, h2 {
 }
 
 #descrizione {
-    background-color: #e6f7ff;
-    padding: 1em;
-    border-left: 4px solid #0056b3;
+    margin-top: 15px;
+    background-color: transparent;
+    padding: 40px;
+    border-left: 4px #0056b3;
+    text-align: center;
+    font-size: 2rem;
 }
 
 #servizi {
     background-color: #f0fff0;
-    padding: 10px;
-    border-left: 4px solid #28a745;
+    padding: 40px;
+    border-left: 4px #28a745;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-#orari {
-    background-color: #fffbea;
-    padding: 10px;
-    border-left: 4px solid #ffc107;
+#servizi ul {
+    list-style: none;
 }
 
-#contatti {
-    background-color: #ffebee;
-    padding: 10px;
-    border-left: 4px solid #dc3545;
+#orari, #contatti {
+    padding: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 30%;
+    flex: 1;
 }
+
+#orari table {
+    display: flex;
+    justify-content: center;
+}
+
+#orari table {
+    color: white;
+}
+
 
 form {
     display: flex;
@@ -126,7 +140,7 @@ form {
     margin-top: 50px;
 }
 
-input, button, textarea {
+input, textarea {
     padding: 10px;
     font-size: 16px;
     color: #000000;
@@ -142,7 +156,10 @@ button {
 }
 
 .footer {
-    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(0, 0, 43);
     color: white;
     text-align: center;
     padding: 5px;
