@@ -1,0 +1,130 @@
+<html>
+
+<head>
+    <title>NuovoLibro</title>
+    <link rel="stylesheet" href="./CSS/stylesGestore.css">
+</head>
+
+<body>
+    <header>
+        <div id="main-header">
+            <img src="Immagini/logo.png" alt="" width="300px">
+        </div>
+    </header>
+    <div class="navbar-container">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="Principale.html">Home</a>
+                </li>
+                <li>
+                    <a href="contattaci.html">Contattaci</a>
+                </li>
+                <li>
+                    <a href="accedi.html">Accedi</a>
+                </li>
+                <li>
+                    <a href="preferiti.html">Preferiti</a>
+                </li>
+                <li>
+                    <a href="ricerca.html">Ricerca</a>
+                </li>
+
+
+            </ul>
+        </nav>
+    </div>
+    <div class="navbar-container">
+        <nav class="navgestore">
+            <a href="AccountGestore.html">Gestione</a>
+            <a href="Magazzino.html">Magazzino</a>
+            <a href="#">Nuovo Libro</a>
+            <a href="Utenze">Gestione Utenze</a>
+            <a href="Prestiti">Prestiti</a>
+        </nav>
+    </div>
+    <main>
+        <form id="nuovoLibro">
+            <div class="aggiungiLibro">
+                <fieldset class="libro">
+                    <legend>Libro</legend>
+                    <input type="text" name="titolo" required placeholder="Titolo">
+                    <input type="number" name="pagine" required placeholder="Numero pagine">
+                    <select name="genere" required>
+                        <option value="---">Genere</option>
+                        <option value="HOR">Horror</option>
+                        <option value="FAN">Fantasy</option>
+                        <option value="SCI">Fantasicenza</option>
+                        <option value="THR">Thriller</option>
+                        <option value="STO">Storico</option>
+                    </select>
+                    <textarea name="trama" maxlength="500" rows="4" cols="45" required
+                        placeholder="Trama (max: 500 caratteri)"></textarea>
+                </fieldset>
+                <fieldset class="autore">
+                    <legend>Autore</legend>
+                    <input type="text" name="nomeAutore" id="nome" required placeholder="Nome ">
+                    <input type="text" name="cognomeAutore" id="cognome" required placeholder="Cognome">
+                </fieldset>
+                <fieldset class="pubblicazione">
+                    <legend>Pubblicazione</legend>
+                    <input type="text" name="editore" id="editore" required placeholder="Casa editrice">
+                    <label for="date">Data di pubblicazione:</label>
+                    <input type="date" name="pubblicazione" id="pubblicazione" required>
+                </fieldset>
+                <input type="submit" value="INVIA" id="invio">
+            </div>
+        </form>
+    </main>
+    <div class="footer">
+        <div id="orari">
+            <h2>Orari di Apertura</h2>
+            <table>
+                <tr>
+                    <th>Giorno</th>
+                    <th>Orari</th>
+                </tr>
+                <tr>
+                    <td>Lunedì</td>
+                    <td>9:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Martedì</td>
+                    <td>9:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Mercoledì</td>
+                    <td>9:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Giovedì</td>
+                    <td>9:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Venerdì</td>
+                    <td>9:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Sabato</td>
+                    <td>10:00 - 14:00</td>
+                </tr>
+                <tr>
+                    <td>Domenica</td>
+                    <td>Chiuso</td>
+                </tr>
+            </table>
+        </div>
+
+        <section id="contatti">
+            <h2>Contatti</h2>
+            <p>Indirizzo: Via della Cultura, 123, 00100 Città</p>
+            <p>Telefono: 0123-456789</p>
+            <p>Email: info@biblioteca.it</p>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Sistema Bibliotecario. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+
+</html>
