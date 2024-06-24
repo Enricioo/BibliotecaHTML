@@ -1,23 +1,18 @@
 body {
-    margin: 0;
-    padding: 0;
     background-image: url(../Immagini/sfondo.png);
     background-size: cover;
 }
 
-#main-header {
+.main-header {
     color: black;
     padding: 10px;
     text-align: center;
     align-items: center;
 }
 
-/*.img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}*/
+#arrivi {
+    width: 10%;
+}
 
 #accedi {
     float: right;
@@ -50,10 +45,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-}
-
-.navbar li {
-    float: left;
+    display: flex;
 }
 
 .navbar > li,a {
@@ -61,6 +53,7 @@ body {
     color: black;
     padding: 14px 16px;
     text-decoration: none;
+    text-align: center;
 }
 
 .navbar a:hover {
@@ -70,17 +63,19 @@ body {
 .images {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .images img {
     margin-right: 20px;
+    margin-bottom: 15px;
     padding-left: 15px;
 }
 
 .uscite {
     text-align: center;
     color: white;
-    padding: 40px;
+    padding: 20px;
     position: relative;
     background-color: rgb(61, 61, 61);
     font-size: 2em;
@@ -99,8 +94,8 @@ body {
     background-color: lightblue;
     padding: 40px;
     border-left: 4px #28a745;
-    text-align: center;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 #servizi ul {
@@ -128,8 +123,5 @@ body {
     color: white;
     text-align: center;
     padding: 5px;
-    width: 100%;
     bottom: 0;
 }
-
-
