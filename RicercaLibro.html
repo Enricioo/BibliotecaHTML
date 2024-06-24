@@ -3,6 +3,7 @@
 <head>
     <title>Sistema Bibliotecario</title>
     <link rel="stylesheet" href="CSS/styleForm.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 
@@ -40,18 +41,32 @@
 
     <main>
         <section class="ricerca">
-            <h2>Cerca un libro in particolare</h2>
+            <h2>Cerca un libro in particolare...</h2>
             <form id="sezionediricerca">
-
+                <label for="genere">Genere:</label>
+                <select name="genere">
+                    <option value="0" selected>Selezione un genere</option>
+                    <option value="1">Romanzo</option>
+                    <option value="2">Poesie</option>
+                    <option value="3">Rosa</option>
+                    <option value="4">Giallo</option>
+                    <option value="5">Fantasy</option>
+                    <option value="6">Horror</option>
+                    <option value="7">Thriller</option>
+                    <option value="9">Storico</option>
+                    <option value="10">Filosofico</option>
+                    <option value="11">Biografico</option>
+                    <option value="11">Altro</option>
+                </select>
+                <br><br><br>
                 <label for="titolo">Titolo:</label>
                 <input type="text" id="title" name="titolo" required>
                 <br><br>
                 <label for="autore">Autore:</label>
                 <input type="text" id="autore" name="autore" required>
                 <br><br>
-                <label for="autore">Genere:</label>
-                <input type="text" id="genere" name="genere" required>
-                <br><br>
+                
+             
                 <button type="submit">Avvia ricerca</button>
                 
             </form>
