@@ -147,7 +147,6 @@ button {
 }
 
 .footer {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -156,7 +155,6 @@ button {
     text-align: center;
     padding: 5px;
     width: 100%;
-    bottom: 0;
 }
 
 @media screen and (min-width: 144px) {
@@ -167,19 +165,12 @@ button {
 
     .navbar {
         border: 2px solid;
-<<<<<<< HEAD
-        padding: 5px;
-=======
->>>>>>> 551549a (Sistemate le pagine)
         font-size: 25px;
     }
 
     .navbar ul {
         flex-direction: column;
-<<<<<<< HEAD
-=======
         font-size: 20px;
->>>>>>> 551549a (Sistemate le pagine)
     }
 
     #mappa {
@@ -217,10 +208,6 @@ button {
         margin-left: auto;
         margin-right: auto;
         border: 2px solid;
-<<<<<<< HEAD
-        padding: 25px;
-=======
->>>>>>> 551549a (Sistemate le pagine)
         font-size: 25px;
     }
 
