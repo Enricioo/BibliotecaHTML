@@ -1,12 +1,17 @@
 /*-----sfondo, header e navbar-----*/
 
 body {
-    background-image: url(../Immagini/sfondo.png);
+    background-image: url(../img/Sfondo.png);
     background-size: cover;
 }
 
 main {
     margin-top: 10px;
+}
+
+#logo {
+    alt: "";
+    width: "300 px";
 }
 
 #main-header {
@@ -74,6 +79,7 @@ main {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: inline-block;
 }
 
 .navgestore li {
@@ -97,14 +103,21 @@ main {
 
 /*-----account gestore-----*/
 
+main.gestore {
+    display : flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
 #lista_ritardi {
+
     margin-top: 10px;
     background-color: rgba(211, 75, 75, 0.667);
     border-style: solid;
     border-color: brown;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+    flex-basis: 40%;
+    height: fit-content;
+    margin-bottom: 20%;
 }
 
 #lista_in_esaurimento {
@@ -112,21 +125,34 @@ main {
     background-color: rgba(211, 75, 75, 0.667);
     border-style: solid;
     border-color: brown;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    margin-bottom: 15%;
-    bottom: 10%;
-
+    flex-basis: 40%;
+    height: fit-content;
+    margin-bottom: 20%;
 }
 
 /*-----magazzino-----*/
 
+.magazzino {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.magazzino > div {
+    margin: 5px;
+    border-style: none;
+}
+
+.magazzino > div:hover {
+    border-style: double;
+    border-color: blue;
+}
+
 .magazzino table {
     background-color: black;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    width: 80%;
 }
 
 .magazzino caption {
@@ -144,86 +170,55 @@ main {
 }
 
 .magazzino table {
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 
 /*-----nuovo libro-----*/
 
 div.aggiungiLibro {
     margin-bottom: 10%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .aggiungiLibro fieldset {
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 15px;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
 }
 
 /*sezione del libro*/
 
-.libro input[type="text"] {
-    margin-left: 15%;
-    margin-right: 5%;
+.libro input {
     margin-bottom:10px;
-    width: 17%
-}
-
-.libro input[type="number"] {
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom:10px;
-    width: 17%
-}
-
-.libro select {
-    margin-left: 5%;
-    margin-right: 15%;
-    margin-bottom:10px;
-    width:17%;
 }
 
 .libro textarea {
-    float: left;
-    width: 70%;
-    margin-top: 10px;
-    margin-left: 15%;
     margin-right: 15%;
 }
 
 /*sezione dell'autore*/
 
-#nome {
-    display:inline-block;
-    margin-left: 15%;
-    margin-right: 5%;
+.autore input {
     margin-bottom: 10px;
-    width: 29%;
-}
-
-#cognome {
-    display:inline-block;
-    margin-left: 5%;
-    margin-right: 15%;
-    margin-bottom: 10px;
-    width: 29%;
 }
 
 /*sezione della pubblicazione*/
 
-#editore {
-    display:inline-block;
-    margin-left: 15%;
-    margin-right: 5%;
+.pubblicazione * {
     margin-bottom: 10px;
-    width: 20%;
 }
 
-#pubblicazione {
-    display:inline-block;
-    margin-left: 5%;
-    margin-right: 15%;
-    margin-bottom: 10px;
-    width: 20%;
+.pubblicazione label {
+    margin-right: 15px;
 }
 
 /*pulsante di invio*/
@@ -234,29 +229,195 @@ div.aggiungiLibro {
     margin-right:45%;
 }
 
+/*-----lista utenti-----*/
+
+.utenze {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#lista_registrati_mob {
+    display:none;
+}
+
+.utenze > div {
+    margin: 5px;
+    border-style: none;
+}
+
+.utenze > div:hover {
+    border-style: double;
+    border-color: blue;
+}
+
+.utenze table {
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.utenze caption {
+    background-color: rgb(204, 252, 189);
+    border-style: solid;
+    border-bottom-style: none ;
+}
+
+.utenze th {
+    background-color: rgb(204, 252, 189);
+}
+
+.utenze td{
+    background-color: rgb(204, 252, 189);
+}
+
+.utenze table {
+    margin-bottom: 10%;
+}
+
+/*-----prestiti-----*/
+
+.prestiti {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#lista_prestiti_mob {
+    display: none;
+}
+
+.prestiti > div {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+
+.navinterna > a {
+    margin: 5px;
+    border-style: none;
+}
+
+.navinterna > a:hover {
+    border-style: double;
+    border-color: blue;
+}
+
+.prestiti table {
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.prestiti caption {
+    background-color: rgb(204, 252, 189);
+    border-style: solid;
+    border-bottom-style: none ;
+}
+
+.prestiti th {
+    background-color: rgb(204, 252, 189);
+}
+
+.prestiti td{
+    background-color: rgb(204, 252, 189);
+}
+
+.prestiti table {
+    margin-bottom: 10%;
+}
+
+/*-----nuovo prestito-----*/
+
+#nuovoPrestito {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+#nuovoPrestito fieldset {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+fieldset.utente {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+fieldset.libro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*-----nuovo utente-----*/
+
+#nuovoUtente fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+fieldset > div {
+    margin: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.sezione input, .sezione select, .sezione label {
+    margin: 5px;
+}
+
+/*-----restituzione-----*/
+
+#restituzione {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+#restituzione > fieldset {
+    width: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 /*-----footer-----*/
 
-#orari, #contatti {
-    padding: 40px;
-    text-align: center;
-    font-size: 1.5rem;
-    width: 30%;
-    flex: 1;
-}
-
-#orari table {
-    display: flex;
-    justify-content: center;
-    color: white;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(0, 0, 43);
+footer {
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    position: fixed;
     width: 100%;
+    height: 10%;
     bottom: 0;
+    margin: 0;
+}
+
+footer a {
+    display: inline-block;
+    color: white;
+    padding: 0;
+    padding-bottom: 10%;
+    margin: 5px;
 }

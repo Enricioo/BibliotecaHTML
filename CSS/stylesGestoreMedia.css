@@ -1,0 +1,177 @@
+@media screen and (max-width: 480px) {
+    /*-----header-----*/
+    #main-header {
+        padding: 5px;
+    }
+
+    #logo {
+        alt: "";
+        max-width: 100%;
+    }
+
+    /*-----navbar-----*/
+
+    .navbar ul {
+        max-width: 100%;
+    }
+    
+    .navbar > li, a {
+        padding: 4px 6px;
+    }
+
+    /*-----navigazione gestore-----*/
+
+    .navgestore > li, a {
+        padding: 4px 6px;
+    } 
+
+    /*-----account gestore-----*/
+
+    main.gestore {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    main.gestore > section {
+        width:80%
+    }
+
+    main.gestore > section#lista_ritardi {
+        margin-bottom: 10px;
+    }
+
+    /*-----magazzino-----*/
+
+    .magazzino table {
+        width: 75%;
+        background-color: black;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30%;
+        width: 100%;
+    }
+
+    /*-----utenze-----*/
+
+    #lista_registrati {
+        display:none;
+    }
+
+    .utenze table#lista_registrati_mob {
+        display:inline-table;
+        width: 50%;
+        background-color: black;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30%;
+        width: 100%;
+    }
+
+    /*-----prestiti-----*/
+
+    #lista_prestiti {
+        display: none;
+    }
+
+    .prestiti table#lista_prestiti_mob {
+        display:inline-table;
+        background-color: black;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 30%;
+        width: 70%;
+    }
+
+    /*-----nuovo libro-----*/
+
+    .aggiungiLibro fieldset {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .aggiungiLibro textarea {
+        width: 100%;
+        margin-top: 5px;
+        margin-right: auto;
+    }
+
+    .aggiungiLibro label {
+        margin-right: 0px;;
+    }
+
+    div.aggiungiLibro {
+        margin-bottom: 30%;
+    }
+
+    .aggiungiLibro input#invio {
+        width: fit-content;
+    }
+
+    /*-----nuovo utente-----*/
+
+    fieldset div.sezione {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    form#nuovoUtente input#invio {
+        width:fit-content;
+    }
+
+    form#nuovoUtente {
+        margin-bottom: 30%;
+    }
+
+    /*-----nuovo prestito-----*/
+
+    #nuovoPrestito fieldset.utente {
+        flex-direction: column;
+    }
+
+    #nuovoPrestito fieldset.libro {
+        flex-direction: column;
+    }
+
+    #nuovoPrestito fieldset.utente input {
+        margin-bottom: 10px;
+    }
+
+    #nuovoPrestito > fieldset {
+        width: 70%;
+    }
+
+    #nuovoPrestito > input {
+        width: fit-content;
+    }
+
+    #nuovoPrestito {
+        margin-bottom: 30%;
+    }
+
+    /*-----restituzione-----*/
+
+    #restituzione fieldset.utente {
+        flex-direction: column;
+    }
+
+    #restituzione fieldset.libro {
+        flex-direction: column;
+    }
+
+    #restituzione fieldset.utente input {
+        margin-bottom: 10px;
+    }
+
+    #restituzione > fieldset {
+        width: 70%;
+    }
+
+    #restituzione > input {
+        width: fit-content;
+    }
+
+    #restituzione {
+        margin-bottom: 30%;
+    }
+}
