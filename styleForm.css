@@ -69,11 +69,26 @@ form {
     flex-direction: column;
     gap: 15px;
     padding: 30px;
+
 }
+
+#fieldset {
+    
+    margin-top: -40px;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    text-align: center;
+    overflow: hidden;
+    border: 7px solid rgb(0, 0, 0);
+    border-style:double;
+   
+}   
 
 #mappa {
     width: auto;
     height: auto;
+
 }
 
 input, button, textarea {
@@ -226,3 +241,6 @@ button {
     }
 
 }
+
+
+
