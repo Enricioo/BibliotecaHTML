@@ -6,8 +6,7 @@
 
     .navbar {
         border: 2px solid;
-        padding: 5px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .navbar ul {
@@ -24,6 +23,11 @@
         height: auto;
     }
 
+    .images2 img {
+        width: 130px;
+        height: auto;
+    }
+
     #descrizione {
         font-size: 20px;
     }
@@ -34,6 +38,7 @@
 
     #servizi {
         font-size: 17px;
+        text-align: center;
     }
 
     #orari {
@@ -66,7 +71,6 @@
         margin-left: auto;
         margin-right: auto;
         border: 2px solid;
-        padding: 25px;
         font-size: 25px;
     }
 
@@ -77,6 +81,16 @@
     .images img {
         width: 105px;
         height: auto;
+    }
+
+    .images2 img {
+        width: 170px;
+        height: auto;
+    }
+
+    #servizi {
+        font-size: 17px;
+        text-align: center;
     }
 
 }
@@ -90,12 +104,16 @@
         margin-left: auto;
         margin-right: auto;
         border: 2px solid;
-        padding: 25px;
         font-size: 25px;
     }
 
     .images img {
         width: 250px;
+        height: auto;
+    }
+
+    .images2 img {
+        width: 300px;
         height: auto;
     }
 
