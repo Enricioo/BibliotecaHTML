@@ -1,0 +1,54 @@
+.TitoloPreferiti {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Stili per i libri */
+.book {
+    background-color: #fff;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.book img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.book-info {
+    text-align: left;
+}
+
+.book-info h2 {
+    margin: 5px 0;
+}
+
+.book-info p {
+    margin: 3px 0;
+}
+
+button {
+    background-color: #a60505;
+    color: white;
+    padding: 8px 12px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}

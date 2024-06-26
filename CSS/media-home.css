@@ -6,11 +6,11 @@
 
     .navbar {
         border: 2px solid;
-        font-size: 20px;
     }
 
     .navbar ul {
         flex-direction: column;
+        font-size: 20px;
     }
 
     .uscite {

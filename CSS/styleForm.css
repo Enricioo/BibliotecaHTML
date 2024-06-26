@@ -25,7 +25,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     border: 2px solid;
-    padding: 25px;
     font-size: 20px;
 }
 
@@ -34,6 +33,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
 }
 
 .navbar li {
@@ -45,6 +45,7 @@ body {
     color: black;
     padding: 14px 16px;
     text-decoration: none;
+    text-align: center;
 }
 
 .navbar a:hover {
@@ -146,6 +147,7 @@ button {
 }
 
 .footer {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -165,12 +167,19 @@ button {
 
     .navbar {
         border: 2px solid;
+<<<<<<< HEAD
         padding: 5px;
+=======
+>>>>>>> 551549a (Sistemate le pagine)
         font-size: 25px;
     }
 
     .navbar ul {
         flex-direction: column;
+<<<<<<< HEAD
+=======
+        font-size: 20px;
+>>>>>>> 551549a (Sistemate le pagine)
     }
 
     #mappa {
@@ -208,7 +217,10 @@ button {
         margin-left: auto;
         margin-right: auto;
         border: 2px solid;
+<<<<<<< HEAD
         padding: 25px;
+=======
+>>>>>>> 551549a (Sistemate le pagine)
         font-size: 25px;
     }
 
