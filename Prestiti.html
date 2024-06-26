@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <title>Prestiti</title>
+        <link rel="stylesheet" href="./CSS/stylesGestore.css">
+        <link rel="stylesheet" href="./CSS/stylesGestoreMedia.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body>
+        <header>
+            <div id="main-header">
+                <img src="img/LogoBiblioteca.png" alt="" width="300px">
+            </div>
+        </header>
+        <div class="navbar-container">
+            <nav class="navbar">
+                <ul>
+                    <li> 
+                        <a href="Principale.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="contattaci.html">Contattaci</a>
+                    </li>
+                    <li>
+                        <a href="accedi.html">Accedi</a>
+                    </li>
+                    <li>
+                        <a href="preferiti.html">Preferiti</a>
+                    </li>
+                    <li>
+                        <a href="ricerca.html">Ricerca</a>
+                    </li>
+    
+    
+                </ul>
+            </nav>
+        </div>
+        <div class="navbar-container">
+            <nav class="navgestore">
+                <ul>
+                    <li><a href="AccountGestore.html">Gestione</a></li>
+                    <li><a href="Magazzino.html">Magazzino</a></li>
+                    <li><a href="Utenze.html">Gestione Utenze</a></li>
+                    <li><a href="#">Prestiti</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="prestiti">
+            <div class="navinterna">
+                <a href="NuovoPrestito.html"><ins>AGGIUNGI NUOVO PRESTITO</ins></a>
+                <a href="Restituzione.html"><ins>RESTITUZIONE LIBRO</ins></a>
+            </div>
+            <!--TABELLA PER LAPTOP-->
+            <table id="lista_prestiti">
+                <thead>
+                    <caption>
+                        Lista Prestiti
+                    </caption>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Utente</th>
+                        <th>Libro</th>
+                        <th>Data inizio prestito</th>
+                        <th>Data fine prestito</th>
+                        <th>Data di consegna</th>
+                        <th>Ritardo?</th>
+                    </tr>
+                    <tr id="prestito1">
+                        <td><a href="./Utenze.html">Francesco Bianchi</a></td>
+                        <td><a href="./Magazzino.html">It</a></td>
+                        <td>03/04/2024</td>
+                        <td>03/06/2024</td>
+                        <td>01/06/2024</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr id="prestito2">
+                        <td><a href="./Utenze.html">Mario Rossi</a></td>
+                        <td><a href="./Magazzino.html">Il signore degli anelli</a></td>
+                        <td>10/05/2024</td>
+                        <td>10/06/2024</td>
+                        <td>---</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr id="prestito3">
+                        <td><a href="./Utenze.html">Giovanni Verdi</a></td>
+                        <td><a href="./Magazzino.html">Le meraviglie del mondo antico</a></td>
+                        <td>15/05/2024</td>
+                        <td>15/06/2024</td>
+                        <td>---</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr id="prestito4">
+                        <td><a href="./Utenze.html">Francesco Bianchi</a></td>
+                        <td><a href="./Magazzino.html"></a>Shining</td>
+                        <td>28/05/2024</td>
+                        <td>28/06/2024</td>
+                        <td>---</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr id="prestito5">
+                        <td><a href="./Utenze.html">Chiara Rossi</a></td>
+                        <td><a href="./Magazzino.html">Il signore degli anelli</a></td>
+                        <td>7/06/2024</td>
+                        <td>7/07/2024</td>
+                        <td>10/06/2024</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr id="prestito6">
+                        <td><a href="./Utenze.html">Chiara Rossi</a></td>
+                        <td><a href="./Magazzino.html">Harry Potter e la pietra filosofale</a></td>
+                        <td>10/06/2024</td>
+                        <td>10/07/2024</td>
+                        <td>---</td>
+                        <td>NO</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--TABELLA PER MOBILE-->
+            <table id="lista_prestiti_mob">
+                <thead>
+                    <caption>
+                        Lista Prestiti
+                    </caption>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Utente</th>
+                        <th>Libro</th>
+                        <th>Date inizio-fine prestito</th>
+                        <th>Data di consegna</th>
+                    </tr>
+                    <tr id="prestito1">
+                        <td><a href="./Utenze.html">Francesco Bianchi</a></td>
+                        <td><a href="./Magazzino.html">It</a></td>
+                        <td>03/04/2024 03/06/2024</td>
+                        <td>01/06/2024</td>
+                    </tr>
+                    <tr id="prestito2">
+                        <td><a href="./Utenze.html">Mario Rossi</a></td>
+                        <td style="background-color: red"><a href="./Magazzino.html">Il signore degli anelli</a></td>
+                        <td>10/05/2024 10/06/2024</td>
+                        <td>---</td>
+                    </tr>
+                    <tr id="prestito3">
+                        <td><a href="./Utenze.html">Giovanni Verdi</a></td>
+                        <td style="background-color: red"><a href="./Magazzino.html">Le meraviglie del mondo antico</a></td>
+                        <td>15/05/2024 15/06/2024</td>
+                        <td>---</td>
+                    </tr>
+                    <tr id="prestito4">
+                        <td><a href="./Utenze.html">Francesco Bianchi</a></td>
+                        <td><a href="./Magazzino.html"></a>Shining</td>
+                        <td>28/05/2024 28/06/2024</td>
+                        <td>---</td>
+                    </tr>
+                    <tr id="prestito5">
+                        <td><a href="./Utenze.html">Chiara Rossi</a></td>
+                        <td><a href="./Magazzino.html">Il signore degli anelli</a></td>
+                        <td>7/06/2024 7/07/2024</td>
+                        <td>10/06/2024</td>
+                    </tr>
+                    <tr id="prestito6">
+                        <td><a href="./Utenze.html">Chiara Rossi</a></td>
+                        <td><a href="./Magazzino.html">Harry Potter e la pietra filosofale</a></td>
+                        <td>10/06/2024 10/07/2024</td>
+                        <td>---</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2024 Sistema Bibliotecario. Tutti i diritti riservati.</p>
+        </footer>
+    </body>
+</html>

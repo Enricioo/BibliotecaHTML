@@ -2,18 +2,20 @@
     <head>
         <title>Magazzino</title>
         <link rel="stylesheet" href="./CSS/stylesGestore.css">
+        <link rel="stylesheet" href="./CSS/stylesGestoreMedia.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
     </head>
     <body>
         <header>
             <div id="main-header">
-                <img src="Immagini/logo.png" alt="" width="300px">
+                <img src="img/LogoBiblioteca.png" alt="">
             </div>
         </header>
         <div class="navbar-container">
             <nav class="navbar">
                 <ul>
                     <li> 
-                        <a href="Home.html">Home</a>
+                        <a href="Principale.html">Home</a>
                     </li>
                     <li>
                         <a href="contattaci.html">Contattaci</a>
@@ -34,14 +36,18 @@
         </div>
         <div class="navbar-container">
             <nav class="navgestore">
-                <a href="AccountGestore.html">Gestione</a>
-                <a href="#">Magazzino</a>
-                <a href="NuovoLibro.html">Nuovo Libro</a>
-                <a href="Utenze">Gestione Utenze</a>
-                <a href="Prestiti">Prestiti</a>
+                <ul>
+                    <li><a href="AccountGestore.html">Gestione</a></li>
+                    <li><a href="#">Magazzino</a></li>
+                    <li><a href="Utenze.html">Gestione Utenze</a></li>
+                    <li><a href="Prestiti.html">Prestiti</a></li>
+                </ul>
             </nav>
         </div>
         <main class="magazzino">
+            <div class="navinterna">
+                <a href="NuovoLibro.html"><ins>AGGIUNGI NUOVO LIBRO</ins></a>
+            </div>
             <table id="lista_libri">
                 <thead>
                     <caption>
@@ -55,31 +61,31 @@
                         <th>Quantità</th>
                         <th>Numero prestiti</th>
                     </tr>
-                    <tr>
+                    <tr id="libro1">
                         <td>It</td>
                         <td>Stephen King</td>
                         <td>7</td>
                         <td>3</td>
                     </tr>
-                    <tr>
+                    <tr id="libro2">
                         <td>Shining</td>
                         <td>Stephen King</td>
                         <td>5</td>
                         <td>1</td>
                     </tr>
-                    <tr>
+                    <tr id="libro3">
                         <td>Il signore degli anelli</td>
                         <td>J. R. R. Tolkien</td>
                         <td>10</td>
                         <td>5</td>
                     </tr>
-                    <tr>
+                    <tr id="libro4">
                         <td>Harry Potter e la pietra filosofale</td>
                         <td>J. K. Rowling</td>
                         <td>15</td>
                         <td>7</td>
                     </tr>
-                    <tr>
+                    <tr id="libro5">
                         <td>Le meraviglie del mondo antico</td>
                         <td>Valerio Massimo Manfredi</td>
                         <td>3</td>
@@ -88,55 +94,8 @@
                 </tbody>
             </table>
         </main>
-        <div class="footer">
-            <div id="orari">
-                <h2>Orari di Apertura</h2>
-                <table>
-                    <tr>
-                        <th>Giorno</th>
-                        <th>Orari</th>
-                    </tr>
-                    <tr>
-                        <td>Lunedì</td>
-                        <td>9:00 - 18:00</td>
-                    </tr>
-                    <tr>
-                        <td>Martedì</td>
-                        <td>9:00 - 18:00</td>
-                    </tr>
-                    <tr>
-                        <td>Mercoledì</td>
-                        <td>9:00 - 18:00</td>
-                    </tr>
-                    <tr>
-                        <td>Giovedì</td>
-                        <td>9:00 - 18:00</td>
-                    </tr>
-                    <tr>
-                        <td>Venerdì</td>
-                        <td>9:00 - 18:00</td>
-                    </tr>
-                    <tr>
-                        <td>Sabato</td>
-                        <td>10:00 - 14:00</td>
-                    </tr>
-                    <tr>
-                        <td>Domenica</td>
-                        <td>Chiuso</td>
-                    </tr>
-                </table>
-            </div>
-
-            <section id="contatti">
-                <h2>Contatti</h2>
-                <p>Indirizzo: Via della Cultura, 123, 00100 Città</p>
-                <p>Telefono: 0123-456789</p>
-                <p>Email: info@biblioteca.it</p>
-            </section>
-        </div>
         <footer class="footer">
             <p>&copy; 2024 Sistema Bibliotecario. Tutti i diritti riservati.</p>
-        </footer>
         </footer>
     </body>
 </html>

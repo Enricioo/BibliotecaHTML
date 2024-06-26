@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>AccountGestore</title>
+        <title>Nuovo Utente</title>
         <link rel="stylesheet" href="./CSS/stylesGestore.css">
         <link rel="stylesheet" href="./CSS/stylesGestoreMedia.css">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -37,29 +37,36 @@
         <div class="navbar-container">
             <nav class="navgestore">
                 <ul>
-                    <li><a href="#">Gestione</a></li>
+                    <li><a href="AccountGestore.html">Gestione</a></li>
                     <li><a href="Magazzino.html">Magazzino</a></li>
                     <li><a href="Utenze.html">Gestione Utenze</a></li>
                     <li><a href="Prestiti.html">Prestiti</a></li>
                 </ul>
             </nav>
         </div>
-        
-        <main class="gestore">
-            <section id="lista_ritardi">
-                Utenti che non hanno consegnato i libri
-                <ul>
-                    <li><a href="./Utenze.html">Mario Rossi</a></li>
-                    <li><a href="./Utenze.html">Giovanni Verdi</a></li>
-                </ul>
-            </section>
-            <section id="lista_in_esaurimento">
-                Libri quasi esauriti
-                <ul>
-                    <li><a href="./Magazzino.html">Shining - copie rimaste: 5</a></li>
-                    <li><a href="./Magazzino.html">Le meraviglie del mondo antico - copie rimaste: 3</a></li>
-                </ul>
-            </section>
+        <main>
+            <form id="nuovoUtente">
+                <fieldset>
+                    <div class="sezione">
+                        <input type="text" name="nome" required placeholder="Nome utente">
+                        <input type="text" name="cognome" required placeholder="Cognome utente">
+                        <input type="date" name="nascita" required placeholder="Data di nascita">    
+                    </div>
+                    <div class="sezione">
+                        <input type="tel" name="telefono" required placeholder="Numero di telefono">
+                        <input type="text" name="codiceFiscale" required placeholder="Codice Fiscale">
+                    </div>
+                    <div class="sezione">
+                        <label for="documento">Documento:</label>
+                        <select name="documento" required>
+                            <option value="ID">Carta d'identità</option>
+                            <option value="PG">Patente di guida</option>
+                        </select>
+                        <input type="text" name="numDocumento" required placeholder="Numero del documento">
+                    </div>
+                    <input type="submit" value="INVIA" id="invio">
+                </fieldset>
+            </form>
         </main>
         <footer class="footer">
             <p>&copy; 2024 Sistema Bibliotecario. Tutti i diritti riservati.</p>

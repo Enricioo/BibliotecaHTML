@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>Utenze</title>
+        <link rel="stylesheet" href="./CSS/stylesGestore.css">
+        <link rel="stylesheet" href="./CSS/stylesGestoreMedia.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    <body>
+        <header>
+            <div id="main-header">
+                <img src="img/LogoBiblioteca.png" alt="" width="300px">
+            </div>
+        </header>
+        <div class="navbar-container">
+            <nav class="navbar">
+                <ul>
+                    <li> 
+                        <a href="Principale.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="contattaci.html">Contattaci</a>
+                    </li>
+                    <li>
+                        <a href="accedi.html">Accedi</a>
+                    </li>
+                    <li>
+                        <a href="preferiti.html">Preferiti</a>
+                    </li>
+                    <li>
+                        <a href="ricerca.html">Ricerca</a>
+                    </li>
+    
+    
+                </ul>
+            </nav>
+        </div>
+        <div class="navbar-container">
+            <nav class="navgestore">
+                <ul>
+                    <li><a href="AccountGestore.html">Gestione</a></li>
+                    <li><a href="Magazzino.html">Magazzino</a></li>
+                    <li><a href="#">Gestione Utenze</a></li>
+                    <li><a href="Prestiti.html">Prestiti</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="utenze">
+            <div class="navinterna">
+                <a href="NuovoUtente.html"><ins>AGGIUNGI NUOVO UTENTE</ins></a>
+            </div>
+            <!--TABELLA LAPTOP-->
+            <table id="lista_registrati">
+                <thead>
+                    <caption>
+                        Lista Utenti Registrati
+                    </caption>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Cognome</th>
+                        <th>Anno di nascita</th>
+                        <th>Codice Fiscale</th>
+                        <th>Prestiti</th>
+                        <th>In ritardo?</th>
+                    </tr>
+                    <tr id="utente1">
+                        <td>Mario</td>
+                        <td>Rossi</td>
+                        <td>1987</td>
+                        <td>RSSMRA87F15C116V</td>
+                        <td><a href="./Prestiti.html">Il signore degli anelli</a></td>
+                        <td>SI</td>
+                    </tr>
+                    <tr id="utente2">
+                        <td>Francesco</td>
+                        <td>Bianchi</td>
+                        <td>1996</td>
+                        <td>BNCFRN96A31C116M</td>
+                        <td><a href="./Prestiti.html">Shining</a></td>
+                        <td>NO</td>
+                    </tr>
+                    <tr id="utente3">
+                        <td>Chiara</td>
+                        <td>Rossi</td>
+                        <td>2005</td>
+                        <td>RSSCHR05B53C116L</td>
+                        <td><a href="./Prestiti.html">Harry Potter e la pietra filosofale</a></td>
+                        <td>NO</td>
+                    </tr>
+                    <tr id="utente4">
+                        <td>Giovanni</td>
+                        <td>Verdi</td>
+                        <td>1999</td>
+                        <td>VRDGVN99D28C116N</td>
+                        <td><a href="./Prestiti.html">Le meraviglie del mondo antico</a></td>
+                        <td>SI</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--TABELLA CELLULARI-->
+            <table id="lista_registrati_mob">
+                <thead>
+                    <caption>
+                        Lista Utenti Registrati
+                    </caption>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Cognome</th>
+                        <th>Prestiti</th>
+                    </tr>
+                    <tr id="utente1">
+                        <td>Mario</td>
+                        <td>Rossi</td>
+                        <td style="background-color: red;"><a href="./Prestiti.html">Il signore degli anelli</a></td>
+                    </tr>
+                    <tr id="utente2">
+                        <td>Francesco</td>
+                        <td>Bianchi</td>
+                        <td><a href="./Prestiti.html">Shining</a></td>
+                    </tr>
+                    <tr id="utente3">
+                        <td>Chiara</td>
+                        <td>Rossi</td>
+                        <td><a href="./Prestiti.html">Harry Potter e la pietra filosofale</a></td>
+                    </tr>
+                    <tr id="utente4">
+                        <td>Giovanni</td>
+                        <td>Verdi</td>
+                        <td style="background-color: red;"><a href="./Prestiti.html">Le meraviglie del mondo antico</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2024 Sistema Bibliotecario. Tutti i diritti riservati.</p>
+        </footer>
+    </body>
+</html>

@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>AccountGestore</title>
+        <title>Nuovo Prestito</title>
         <link rel="stylesheet" href="./CSS/stylesGestore.css">
         <link rel="stylesheet" href="./CSS/stylesGestoreMedia.css">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -37,29 +37,28 @@
         <div class="navbar-container">
             <nav class="navgestore">
                 <ul>
-                    <li><a href="#">Gestione</a></li>
+                    <li><a href="AccountGestore.html">Gestione</a></li>
                     <li><a href="Magazzino.html">Magazzino</a></li>
                     <li><a href="Utenze.html">Gestione Utenze</a></li>
                     <li><a href="Prestiti.html">Prestiti</a></li>
                 </ul>
             </nav>
         </div>
-        
-        <main class="gestore">
-            <section id="lista_ritardi">
-                Utenti che non hanno consegnato i libri
-                <ul>
-                    <li><a href="./Utenze.html">Mario Rossi</a></li>
-                    <li><a href="./Utenze.html">Giovanni Verdi</a></li>
-                </ul>
-            </section>
-            <section id="lista_in_esaurimento">
-                Libri quasi esauriti
-                <ul>
-                    <li><a href="./Magazzino.html">Shining - copie rimaste: 5</a></li>
-                    <li><a href="./Magazzino.html">Le meraviglie del mondo antico - copie rimaste: 3</a></li>
-                </ul>
-            </section>
+        <main>
+            <form id="nuovoPrestito">
+                <fieldset class="utente">
+                    <legend>Dati dell'utente</legend>
+                    <input type="text" name="nome" required placeholder="Nome utente">
+                    <input type="text" name="cognome" required placeholder="Cognome utente">
+                    <input type="text" name="cf" required placeholder="Codice Fiscale">
+                </fieldset>
+                <fieldset class="libro">
+                    <legend>Dati del libro</legend>
+                    <input type="text" name="titolo" required placeholder="Titolo libro">
+                    <input type="text" name="isbn" required placeholder="Codice ISBN">
+                </fieldset>
+                <input type="submit" value="INVIA" id="invio">
+            </form>
         </main>
         <footer class="footer">
             <p>&copy; 2024 Sistema Bibliotecario. Tutti i diritti riservati.</p>
